@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "khand";
@@ -8,13 +8,39 @@
     font-style: normal;
 }
 
-.faixa{
+.faixa {
     background-color: #F8F8F8;
     padding: 10px;
 }
 
-.faixa span{
+.faixa span {
     color: #008542;
     font-weight: bold;
 }
 
+.apresentacao {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    font-size: 1.75rem;
+    color: #008542;
+}
+
+h3{
+    font-weight: bold;
+    padding: 5px;
+}
+
+.titulo hr {
+    width: calc(100vw - 35vw);
+    height: 3px;
+    margin: auto 0;
+    background-color: #008542;
+    border: none;
+}
