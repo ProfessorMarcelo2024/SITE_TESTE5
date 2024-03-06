@@ -1,3 +1,4 @@
+/*Geral*/
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -10,8 +11,11 @@
 
 .conteudo{
     width: 100;
-
+    padding: 10px;
 }
+
+/*---------------------------------------------*/
+/*Faixa superior*/
 
 .faixa {
     background-color: #F8F8F8;
@@ -23,8 +27,11 @@
     font-weight: bold;
 }
 
-.apresentacao {
-    padding: 10px;
+/*---------------------------------------------*/
+/*Area de apresentação*/
+
+.apresentacao img{
+    width: 100%;
 }
 
 .titulo {
@@ -43,7 +50,11 @@ h3{
     margin: auto 0;
     background-color: #008542;
     border: none;
+    border-radius: 20px;
 }
+
+/*---------------------------------------------*/
+/*Oil map: barra de pesquisa*/
 
 .pesquisa{
     width: 85vw;
@@ -59,6 +70,9 @@ h3{
     background-color: #D9D9D9;
 }
 
+/*---------------------------------------------*/
+/*Oil map: mapa*/
+
 .mapa{
     background-color: #90DAEE;
     border: 2px solid #AAAAAA;
@@ -70,6 +84,80 @@ h3{
     width: 100%;
 }
 
-.oilmap{ 
+/*---------------------------------------------*/
+/*Oil map - Controles: Selecionar*/
+
+.selecionar{
+    width: 100%;
+    display: flex;
     padding: 5px;
 }
+
+.opc{
+    text-align: center;
+    width: 25%;
+}
+
+/*---------------------------------------------*/
+/*Oil map - Controles: Painel*/
+
+.painel{
+    width: 100;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    height: 200px;
+ 
+}
+
+.overflow{
+    width: 50%;
+    overflow: scroll;
+    padding: 10px;
+    overflow-x: hidden;  
+}
+
+.separador{
+    width: 1px;
+    height: 100%;
+    background-color: #AAAAAA;
+    border-radius: 2px;
+}
+
+/*Painel: opções*/
+
+.opcoes{
+    display: flex; 
+    text-align: justify;
+}
+
+/*Painel: resultado*/
+
+.resultado{
+    display: inline;
+    text-align: left;
+}
+
+/*---------------------------------------------*/
+/*Oil map - Controles: Documento*/
+
+.documento{
+    width: 100;
+    display: flex;
+    padding: 10px;
+}
+
+.documento .conteudo{
+    display: flex;
+    margin: auto;
+}
+
+.documento img{
+    width: 55px;
+}
+
+/*---------------------------------------------*/
+/*Novidades*/
+
+
