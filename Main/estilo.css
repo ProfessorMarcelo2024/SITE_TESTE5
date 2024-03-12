@@ -158,6 +158,63 @@ h3{
 }
 
 /*---------------------------------------------*/
-/*Novidades*/
+/*Novidades-NewsLetter Intro*/
+
+.intro{
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+}
+
+.intro img{
+    width: 200px;
+    padding: 3px;
+}
+
+/*---------------------------------------------*/
+/*Novidades-NewsLetter Formulario*/
+
+.formulario{
+    width: 100;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid red;
+    display: inline-block;
+}
+
+.areaDois{
+  
+}
+
+.formulario .selectPoco input, .email input{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+} 
+.selectPoco input{
+    width: 100%;
+}
+.conjunto{
+    border: 2px solid red;
+    width: 100;
+    padding-left: 10px;
+}
+.assuntos{
+    border: 2px solid red;
+    width: 30%;
+}
+
+.selectPoco{
+    border: 2px solid red;
+    width: 30%;
+}
+
+.atualizacoes{
+    border: 2px solid red;
+    width: 30%;
+}
+
+
 
 
