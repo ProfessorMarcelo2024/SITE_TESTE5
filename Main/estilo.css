@@ -161,13 +161,23 @@ h3{
 /*Novidades-NewsLetter Intro*/
 
 .intro{
-    display: flex;
-    text-align: justify;
-    padding: 10px;
+    width: 100;
+    padding: 5px;
+
 }
 
-.intro img{
-    width: 200px;
+.introConjunto{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.introConjunto p{
+    margin: auto 0;
+}
+
+.introConjunto img{
+    height: 100px;
     padding: 3px;
 }
 
@@ -178,43 +188,51 @@ h3{
     width: 100;
     background-color: #F8F8F8;
     border-radius: 20px;
-    padding: 5px;
-    border: 2px solid red;
-    display: inline-block;
+    padding: 10px;
+    
 }
 
-.areaDois{
-  
+.formSelect{
+    display: flex;
 }
 
-.formulario .selectPoco input, .email input{
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 10px;
-} 
-.selectPoco input{
+.formEmail{
     width: 100%;
+    
 }
-.conjunto{
-    border: 2px solid red;
-    width: 100;
+
+.formAssunto{
+    width: 30%;
+    
+}
+
+.formAtulizacao{
+    width: 30%;
+    
+}
+
+.formPoco{
+    width: 40%;
+    
+}
+
+.formConjunto{
     padding-left: 10px;
-}
-.assuntos{
-    border: 2px solid red;
-    width: 30%;
+    
 }
 
-.selectPoco{
-    border: 2px solid red;
-    width: 30%;
+.formulario input[type="text"]{
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 50%;
 }
 
-.atualizacoes{
-    border: 2px solid red;
-    width: 30%;
+.formEmail input{
+    max-width: 180px;
 }
 
-
-
-
+.formPoco input{
+    width: 100% !important;
+    max-width: 100px;
+}

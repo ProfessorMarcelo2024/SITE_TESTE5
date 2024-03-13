@@ -148,47 +148,44 @@
             </div>
             <div class="newsletter">
                 <div class="intro">
-                    <img src="imgs/newsletter_letter.svg" alt="">
+                    <div class="introConjunto">
+                        <img src="imgs/newsletter_letter.svg" alt="">
                     <p>Assinando nossa NewsLetter você fica informado, recebendo informações dos seus pontos de
                         interesse.</p>
+                    </div>
                 </div>
                 <div class="formulario">
-                    <div class="email">
-                        <label for="emailInput">Email:</label>
-                        <input type="text" id="emailInput">
+                    <div class="formEmail">
+                        Email: <input type="text">
                     </div>
-                    <div class=" ">
-                        <div class="assuntos">
-                            <label for="tiposAssunto">Assuntos:</label>
-                            <div id="tiposAssunto">
-                                <div class="conjunto"><input type="radio" name="assunto" id="assuntoPoco"><label
-                                        for="">Poços;</label></div>
-                                <div class="conjunto"><input type="radio" name="assunto" id="assuntoBloco"><label
-                                        for="">Blocos;</label></div>
-                                <div class="conjunto"><input type="radio" name="assunto" id="assuntoCampo"><label
-                                        for="">Campos;</label></div>
-                                <div class="conjunto"><input type="radio" name="assunto" id="assuntoBacia"><label
-                                        for="">Bacias;</label></div>
-                            </div>
-                        </div>
-                        <div class="atualizacoes">
-                            <label for="frequenciaAtualizacao">Atualizações:</label>
-                            <div id="frequenciaAtualizacao">
-                                <div class="conjunto"><input type="radio" name="atualizacao" id="atualizacaoMes"><label for="">Mensais;</label></div>
-                                <div class="conjunto"><input type="radio" name="atualizacao" id="atualizacaoSemes"><label for="">Semestrais;</label></div>
-                                <div class="conjunto"><input type="radio" name="atualizacao" id="atualizacaoAnual"><label for="">Anuais;</label></div>
-                            </div>
-                        </div>
-                        <div class="selectPoco">
-                            <label for="dadosPoco">Poços:</label>
-                            <div id="dadosPoco">
-                                <div class="conjunto"> <label for="nomePoco">Nome:</label><input type="text"></div>
-                                <div class="conjunto"> <label for="operdaorPoco">Operador:</label><input type="text">
-                                </div>
-                                <div class="conjunto"> <label for="codigoPoco">Codigo:</label><input type="text"> </div>
+                    <div class="formSelect">
+                        <div class="formAssunto">
+                            Assunto:
+                            <div >
+                                <div class="formConjunto"><input type="radio" name="assunto" id="">Poços;</div>
+                                <div class="formConjunto"><input type="radio" name="assunto" id="">Blocos;</div>
+                                <div class="formConjunto"><input type="radio" name="assunto" id="">Campos;</div>
+                                <div class="formConjunto"><input type="radio" name="assunto" id="">Bacias;</div>
                             </div>
                         </div>
                         
+                        <div class="formAtulizacao">
+                            Atualizações:
+                            <div>
+                                <div class="formConjunto"><input type="radio" name="atuazacao" id="">Mensais;</div>
+                                <div class="formConjunto"><input type="radio" name="atuazacao" id="">Semestrais;</div>
+                                <div class="formConjunto"><input type="radio" name="atuazacao" id="">Anuais;</div>
+                            </div>
+                        </div>
+
+                        <div class="formPoco">
+                            Poço:
+                            <div>
+                                <div class="formConjunto">Nome:<input type="text"></div>
+                                <div class="formConjunto">Operador:<input type="text"></div>
+                                <div class="formConjunto">Codigo:<input type="text"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
