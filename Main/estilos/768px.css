@@ -1,18 +1,104 @@
 @media screen and (min-width: 768px) {
-   
+
 
     /*---------------------------------------------*/
-    /*Faixa superior*/
-    /*---------------------------------------------*/
     /*Area de apresentação*/
+
+    .apresentacaoImg {
+        display: flex;
+        width: 100%;
+    }
+
+    .halfImg {
+        display: block;
+    }
+
+    .apresentacao h3 {
+        display: none;
+    }
+
+    .fullImg {
+        display: none;
+    }
+
+    .apresentacao img {
+        width: 50%;
+    }
+
+    .conteudo .titulo hr {
+        width: 100%;
+        height: 2px;
+        background-color: #AAAAAA;
+        border: none;
+        border-radius: 20px;
+        margin: 20px 0px;
+    }
+
     /*---------------------------------------------*/
-    /*Oil map: barra de pesquisa*/
+    /*Oil map: pesquisa_mapa*/
+
+    .oilmap {
+        display: flex;
+    }
+
+    .oilmap hr{
+        margin: 0 !important;
+    }
+
+
+    .mapa_pesquisa {
+        width: 60%;
+    }
+
+
+
     /*---------------------------------------------*/
-    /*Oil map: mapa*/
-    /*---------------------------------------------*/
-    /*Oil map - Controles: Selecionar*/
+    /*Oil map - Controles*/
+
+    .controles {
+        width: 40%;
+        height: 100;
+    }
+
+
+    .separador {
+        display: none;
+    }
+
     /*---------------------------------------------*/
     /*Oil map - Controles: Painel*/
+
+    .painel {
+        display: grid;
+        border: 2px solid red;
+        height: 310px;
+    }  
+
+    .overflow{
+        width: 100%; 
+        overflow: scroll;
+        padding: 10px;
+        overflow-x: hidden;  
+    } 
+    .painel_documentos{
+        background-color: #F8F8F8;
+        border-radius: 20px;
+        height: 92%;
+    }
+
+    /*Painel: opções*/ 
+    .opcoes {
+        width: 100;
+        height: 50%;
+        text-align: justify;
+    }
+
+    /*Painel: resultado*/
+
+    .resultado {
+        height: 50%;
+    }
+
     /*---------------------------------------------*/
     /*Oil map - Controles: Documento*/
     /*---------------------------------------------*/
@@ -25,4 +111,21 @@
     /*Footer*/
     /*---------------------------------------------*/
     /*menu*/
+    .menu {
+        display: none;
+    }
+
+    .menuSuperior {
+        display: flex;
+        padding: 0px 50px;
+    }
+
+    .menuSuperior img {
+        height: 50px;
+    }
+
+    .menuSopt {
+        text-align: right;
+        width: 100%;
+    }
 }
