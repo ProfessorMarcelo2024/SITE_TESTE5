@@ -13,7 +13,7 @@
         display: block;
     }
 
-    .apresentacao h3 {
+    .titulo h3 {
         display: none;
     }
 
@@ -39,17 +39,26 @@
 
     .oilmap {
         display: flex;
+        height: 500px;
     }
 
     .oilmap hr{
-        margin: 0 !important;
+        height: 1px;
+        margin: 5px !important;
     }
 
 
     .mapa_pesquisa {
         width: 60%;
+        height: 500px;
     }
 
+    .mapa{
+        padding: 10px;
+        overflow-x: hidden;
+        border-radius: 20px; 
+        height: 425px;
+    }
 
 
     /*---------------------------------------------*/
@@ -57,7 +66,7 @@
 
     .controles {
         width: 40%;
-        height: 100;
+        height: 500px;
     }
 
 
@@ -70,45 +79,98 @@
 
     .painel {
         display: grid;
-        border: 2px solid red;
-        height: 310px;
+        height: 75%;
     }  
 
     .overflow{
-        width: 100%; 
+        width: 90%; 
         overflow: scroll;
         padding: 10px;
         overflow-x: hidden;  
     } 
+
     .painel_documentos{
         background-color: #F8F8F8;
-        border-radius: 20px;
-        height: 92%;
-    }
-
-    /*Painel: opções*/ 
-    .opcoes {
-        width: 100;
-        height: 50%;
-        text-align: justify;
-    }
-
-    /*Painel: resultado*/
-
-    .resultado {
-        height: 50%;
+        border-radius:20px;
+        height: 90%;
     }
 
     /*---------------------------------------------*/
-    /*Oil map - Controles: Documento*/
-    /*---------------------------------------------*/
-    /*Novidades-NewsLetter Intro*/
-    /*---------------------------------------------*/
-    /*Novidades-NewsLetter Formulario*/
+    /*Novidades-NewsLetter*/
+
+    .newsletter{
+        display: flex;
+    }
+
+    .intro{
+        width: 60%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .introConjunto img{
+        height: 120px;
+    }
+
+    .introConjunto{
+        text-align: left;
+    }
+
+    .formulario{
+        margin-top: 20%;
+    }
+  
+    .formContainer{
+        width: 40%;
+        text-align: center;
+    }
+
+    .titulo_intro_Conjunto{
+        width: 100%;
+    }
+
+    .titulo_intro_Conjunto h3{
+        display: inline;
+        color: #008542;
+        font-size: 3rem;
+    }
+
     /*---------------------------------------------*/
     /*Chatbot*/
+
+    .chatBot h3{
+        color:#373737;
+    }
+
+    .chatBot span{
+        display: none;
+    }
+
     /*---------------------------------------------*/
     /*Footer*/
+
+    .footerIcon{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    .COPYRIGHT{
+        margin-top: 20px;
+    }
+    
+    .footerNavegation{
+        width: 50%;
+    }
+
+    footer hr{
+        height: 1px;
+        border: none;
+        background-color: #D2D2D2;
+    }
+
     /*---------------------------------------------*/
     /*menu*/
     .menu {
