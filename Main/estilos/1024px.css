@@ -5,6 +5,11 @@
     /*Faixa superior*/
     /*---------------------------------------------*/
     /*Area de apresentação*/
+
+    .apresentacaoImg img{
+        height: 450px;
+    }
+
     /*---------------------------------------------*/
     /*Oil map: barra de pesquisa*/
     /*---------------------------------------------*/
@@ -25,4 +30,25 @@
     /*Footer*/
     /*---------------------------------------------*/
     /*menu*/
+
+    .menuSuperior{
+        padding: 0;  
+    }
+    .menuSopt{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        width: 700px;
+    }
+
+    .menuAconjunto{
+        display:flex;
+        align-items: center;
+          
+    }
+
+    .menuSopt p{
+        padding: 10px;
+        color: #008542;
+    }
 }
