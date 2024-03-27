@@ -36,6 +36,13 @@ a{
     display: none;
 }
 
+.display375Y{
+    display: contents  !important;;
+}
+
+.display375N{
+    display: none !important;
+}
 
 /*---------------------------------------------*/
 /*Faixa superior*/

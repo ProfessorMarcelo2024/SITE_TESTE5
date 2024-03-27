@@ -1,6 +1,12 @@
 @media screen and (min-width: 768px) {
 
-   
+    .display768Y{
+        display: contents  !important;;
+    }
+    
+    .display768N{
+        display: none !important;
+    }
 
     /*---------------------------------------------*/
     /*Area de apresentação*/
