@@ -20,6 +20,23 @@ a{
     padding: 5px;
 }
 
+.menuSuperior{
+    display: none;
+}
+
+.halfImg{
+    display: none;
+}
+
+.titulo_intro_Conjunto h3{
+    display: none;
+}
+
+.menuAconjunto{
+    display: none;
+}
+
+
 /*---------------------------------------------*/
 /*Faixa superior*/
 
@@ -101,9 +118,14 @@ h3{
     padding: 5px;
 }
 
+.selectOpcPar{
+    width: 50%;
+    display: flex;
+}
+
 .opc{
     text-align: center;
-    width: 25%;
+    width: 50%;
 }
 
 /*---------------------------------------------*/
@@ -310,18 +332,4 @@ footer hr{
     width: 100%;
 }
 
-.menuSuperior{
-    display: none;
-}
 
-.halfImg{
-    display: none;
-}
-
-.titulo_intro_Conjunto h3{
-    display: none;
-}
-
-.menuAconjunto{
-    display: none;
-}

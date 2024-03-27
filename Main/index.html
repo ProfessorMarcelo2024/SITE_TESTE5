@@ -54,14 +54,18 @@
             </div>
             <div class="controles">
                 <div class="selecionar">
-                    <div class="opc"><input type="radio" name="modos" id="pocos" checked><label
-                            for="pocos">Poços</label></div>
-                    <div class="opc"><input type="radio" name="modos" id="blocos"><label for="blocos">Blocos</label>
+                    <div class="selectOpcPar">
+                        <div class="opc"><input type="radio" name="modos" id="pocos" checked><label for="pocos">Poços</label></div>
+                        <div class="opc"><input type="radio" name="modos" id="blocos"><label for="blocos">Blocos</label>
+                        </div>
                     </div>
-                    <div class="opc"><input type="radio" name="modos" id="campos"><label for="campos">Campos</label>
+                    <div class="selectOpcPar">
+                        <div class="opc"><input type="radio" name="modos" id="campos"><label for="campos">Campos</label>
+                        </div>
+                        <div class="opc"><input type="radio" name="modos" id="bacias"><label for="bacias">Bacias</label>
+                        </div>
                     </div>
-                    <div class="opc"><input type="radio" name="modos" id="bacias"><label for="bacias">Bacias</label>
-                    </div>
+
                 </div>
                 <div class="painel_documentos">
                     <div class="painel">
@@ -108,50 +112,61 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div class="novidade">
-            <div class="titulo">
-                <h3>Receber Novidades?</h3>
-                <hr>
+        <div class="novidade_chatbot">
+            <div class="novidade">
+                <div class="titulo">
+                    <h3>Receber Novidades?</h3>
+                    <hr>
+                </div>
+                <div class="newsletter">
+                    <div class="intro">
+                        <div class="titulo_intro_Conjunto">
+                            <h3>Receber Novidades?</h3>
+                            <div class="introConjunto novConjunto">
+                                <img src="imgs/newsletter_letter.svg" alt="">
+                                <p><span>NewsLetter:</span><br> e fique informado, recebendo nossas informações.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formContainer">
+                        <div class="formulario">
+                            <div class="formEmail">
+                                Email: <input type="email" placeholder="...@email.com">
+                            </div>
+                            <div class="botao">
+                                <button type="submit">Inscrever</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="newsletter">
+            <hr>
+            <div class="chatBot">
+                <div class="titulo">
+                    <hr>
+                </div>
                 <div class="intro">
                     <div class="titulo_intro_Conjunto">
-                        <h3>Receber Novidades?</h3>
-                        <div class="introConjunto novConjunto">
-                            <img src="imgs/newsletter_letter.svg" alt="">
-                            <p><span>NewsLetter:</span><br> e fique informado, recebendo nossas informações.</p>
+                        <h3>Alguma pergunta?</h3>
+                        <div class="introConjunto chatConjunto">
+                            <img src="imgs/botIcon.svg" alt="">
+                            <p><span>Alguma pergunta?:<br></span> No nosso chat você acha respostas para perguntas
+                                frequentes.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="formContainer">
-                    <div class="formulario">
-                        <div class="formEmail">
-                            Email: <input type="email" placeholder="...@email.com">
-                        </div>
-                        <div class="botao">
-                            <button type="submit">Inscrever</button>
+                    <div class="botContainer">
+                        <div class="formulario">
+                            <div class="formEmail">
+                                Email: <input type="email" placeholder="...@email.com">
+                            </div>
+                            <div class="botao">
+                                <button type="submit">Inscrever</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="chatBot">
-            <div class="intro">
-                <div class="titulo_intro_Conjunto">
-                    <h3>Alguma pergunta?</h3>
-                    <div class="introConjunto chatConjunto">
-                        <img src="imgs/botIcon.svg" alt="">
-                        <p><span>Alguma pergunta?:<br></span> No nosso chat você acha respostas para perguntas
-                            frequentes.
-                        </p>
-                    </div>
-                </div>
-                <div class="formContainer">
-
                 </div>
             </div>
         </div>
