@@ -263,8 +263,20 @@ h3{
     height: 2px;
 }
 
+.formModal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8F8F8;
+    opacity: 0.5;
+}
+
 /*---------------------------------------------*/
 /*Chatbot*/
+
 
 /*---------------------------------------------*/
 /*Footer*/
