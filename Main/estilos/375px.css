@@ -9,38 +9,39 @@
     font-style: normal;
 }
 
-.conteudo{
+.conteudo {
     width: 100;
     padding: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     padding: 5px;
 }
 
-.menuSuperior{
+.menuSuperior {
     display: none;
 }
 
-.halfImg{
+.halfImg {
     display: none;
 }
 
-.titulo_intro_Conjunto h3{
+.titulo_intro_Conjunto h3 {
     display: none;
 }
 
-.menuAconjunto{
+.menuAconjunto {
     display: none;
 }
 
-.display375Y{
-    display: contents  !important;;
+.display375Y {
+    display: contents !important;
+    ;
 }
 
-.display375N{
+.display375N {
     display: none !important;
 }
 
@@ -60,7 +61,7 @@ a{
 /*---------------------------------------------*/
 /*Area de apresentação*/
 
-.apresentacao img{
+.apresentacao img {
     width: 100%;
 }
 
@@ -71,7 +72,7 @@ a{
     white-space: nowrap;
 }
 
-h3{
+h3 {
     font-weight: bold;
 }
 
@@ -87,7 +88,7 @@ h3{
 /*---------------------------------------------*/
 /*Oil map: barra de pesquisa*/
 
-.pesquisa{
+.pesquisa {
     width: 100;
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -96,7 +97,7 @@ h3{
     margin: auto;
 }
 
-.pesquisa input{
+.pesquisa input {
     width: 90%;
     border: none;
     background-color: #D9D9D9;
@@ -105,32 +106,32 @@ h3{
 /*---------------------------------------------*/
 /*Oil map: mapa*/
 
-.mapa{
+.mapa {
     background-color: #90DAEE;
     border: 2px solid #AAAAAA;
     border-radius: 20px;
     margin-top: 10PX;
 }
 
-.mapa img{
+.mapa img {
     width: 100%;
 }
 
 /*---------------------------------------------*/
 /*Oil map - Controles: Selecionar*/
 
-.selecionar{
+.selecionar {
     width: 100%;
     display: flex;
     padding: 5px;
 }
 
-.selectOpcPar{
+.selectOpcPar {
     width: 50%;
     display: flex;
 }
 
-.opc{
+.opc {
     text-align: center;
     width: 50%;
 }
@@ -138,24 +139,24 @@ h3{
 /*---------------------------------------------*/
 /*Oil map - Controles: Painel*/
 
-.painel{
+.painel {
     width: 100;
     background-color: #F8F8F8;
     border-radius: 20px;
     display: flex;
     padding: 5px;
     height: 130px;
- 
+
 }
 
-.overflow{
+.overflow {
     width: 50%;
     overflow: scroll;
     padding: 10px;
-    overflow-x: hidden;  
+    overflow-x: hidden;
 }
 
-.separador{
+.separador {
     width: 1px;
     height: 100%;
     background-color: #AAAAAA;
@@ -164,14 +165,14 @@ h3{
 
 /*Painel: opções*/
 
-.opcoes{
-    display: flex; 
+.opcoes {
+    display: flex;
     text-align: justify;
 }
 
 /*Painel: resultado*/
 
-.resultado{
+.resultado {
     display: inline;
     text-align: left;
 }
@@ -179,48 +180,48 @@ h3{
 /*---------------------------------------------*/
 /*Oil map - Controles: Documento*/
 
-.documento{
+.documento {
     width: 100;
     display: flex;
     padding: 10px;
 }
 
-.documento .conteudo{
+.documento .conteudo {
     display: flex;
     margin: auto;
 }
 
-.documento img{
+.documento img {
     width: 55px;
 }
 
 /*---------------------------------------------*/
 /*Novidades-NewsLetter Intro*/
 
-.intro{
+.intro {
     width: 100;
     padding: 5px;
 }
 
-.introConjunto{
+.introConjunto {
     width: 85%;
     display: flex;
     margin: auto;
 }
-  
-.introConjunto p{
+
+.introConjunto p {
     margin: auto 0;
 }
 
-.introConjunto span{
+.introConjunto span {
     font-weight: 550;
 }
 
-.novConjunto span{
+.novConjunto span {
     color: #008542;
 }
 
-.introConjunto img{
+.introConjunto img {
     height: 100px;
     padding: 3px;
 }
@@ -228,7 +229,7 @@ h3{
 /*---------------------------------------------*/
 /*Novidades-NewsLetter Formulario*/
 
-.formulario{
+.formulario {
     width: 100;
     background-color: #F8F8F8;
     border-radius: 20px;
@@ -236,11 +237,11 @@ h3{
     display: flex;
 }
 
-.formEmail{
+.formEmail {
     width: 100%;
 }
 
-.formulario input[type="email"]{
+.formulario input[type="email"] {
     border: none;
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -248,14 +249,14 @@ h3{
     padding: 3px;
 }
 
-.formulario button[type="submit"]{
+.formulario button[type="submit"] {
     border: none;
     padding: 5px;
     border-radius: 10px;
     margin: 0 auto;
 }
 
-.conteudo hr{
+.conteudo hr {
     border: none;
     border-radius: 2px;
     background-color: #AAAAAA;
@@ -263,7 +264,11 @@ h3{
     height: 2px;
 }
 
-.formModal{
+
+/*---------------------------------------------*/
+/*Chatbot*/
+
+.formModal {
     position: fixed;
     top: 0;
     right: 0;
@@ -271,46 +276,105 @@ h3{
     width: 100vw;
     height: 100vh;
     background-color: #F8F8F8;
-    opacity: 0.5;
 }
 
-/*---------------------------------------------*/
-/*Chatbot*/
+.botContainer{
+    
+}
+.bot {
+    padding: 5px;
+    height: 100%;
+}
 
+.botChatcontainer {
+    height: 90%;
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.botChat{
+    margin-top: auto;
+}
+
+.botControl {
+    padding: 5px;
+    height: 10%;
+}
+
+.botControl input[type='text'] {
+    width: 85%;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    padding: 5px;
+}
+
+.botControl button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+}
+
+.textChatContainer{
+    width: 100%;
+    display: flex;
+}
+
+.textoConfig{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.textoBot {
+    margin-right: auto;
+}
+
+.textoUsuario {
+   margin-left: auto;
+}
+
+.botChatcontainer img{
+    width: 35px;
+}
 
 /*---------------------------------------------*/
 /*Footer*/
 
-footer{
+footer {
     text-align: center;
     background-color: #F8F8F8
 }
 
-footer hr{
+footer hr {
     height: 1px;
     border: none;
     background-color: #D2D2D2;
 }
 
-.footerIcon img{
+.footerIcon img {
     padding: 20px;
     width: 250px;
     margin-bottom: 50px;
 }
 
-.footerIcon{
+.footerIcon {
     background-color: #FFFFFF;
 }
 
 
-.footerNavegation{
+.footerNavegation {
     display: grid;
 }
 
 /*---------------------------------------------*/
 /*menu*/
 
-.menu{
+.menu {
     position: sticky;
     z-index: 2;
     bottom: -1px;
@@ -320,7 +384,7 @@ footer hr{
     text-align: center;
 }
 
-.bolinhaFlutua{
+.bolinhaFlutua {
     z-index: 3;
     position: relative;
     bottom: 20px;
@@ -330,25 +394,23 @@ footer hr{
     height: 65px;
     border-radius: 65px;
     background-color: white;
-    border: 4px solid #D2D2D2;  
+    border: 4px solid #D2D2D2;
 }
 
-.conjuntoMenu{
+.conjuntoMenu {
     width: 20%;
 }
 
-.menu img{
+.menu img {
     align-self: center;
     width: 30px;
 }
 
-.bolinhaFlutua img{
-    width: 35px; 
+.bolinhaFlutua img {
+    width: 35px;
     padding: 15px 0;
 }
 
-.menu .imagem{
+.menu .imagem {
     width: 100%;
 }
-
-

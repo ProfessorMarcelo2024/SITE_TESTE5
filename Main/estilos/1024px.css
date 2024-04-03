@@ -1,14 +1,15 @@
 @media screen and (min-width: 1024px) {
-    
-    .conteudo{
+
+    .conteudo {
         display: grid;
     }
 
-    .display1024Y{
-        display: contents  !important;;
+    .display1024Y {
+        display: contents !important;
+        ;
     }
-    
-    .display1024N{
+
+    .display1024N {
         display: none !important;
     }
 
@@ -17,21 +18,21 @@
     /*---------------------------------------------*/
     /*Area de apresentação*/
 
-    .apresentacaoImg img{
+    .apresentacaoImg img {
         height: 450px;
     }
 
     /*---------------------------------------------*/
     /*Oil map: barra de pesquisa*/
 
-    .pesquisa{
-       width: 80%;
+    .pesquisa {
+        width: 80%;
     }
 
     /*---------------------------------------------*/
     /*Oil map: mapa*/
 
-    .oilmap{
+    .oilmap {
         height: 90vh;
     }
 
@@ -40,12 +41,12 @@
         height: 100%;
     }
 
-    .mapa{
+    .mapa {
         height: 95%;
         text-align: center
     }
 
-    .mapa img{
+    .mapa img {
         width: auto;
         height: 100%;
     }
@@ -58,55 +59,56 @@
         height: 100%;
         margin-left: 10px;
         background-color: #F8F8F8;
-        border-radius:20px;
+        border-radius: 20px;
         font-size: 1.2rem;
     }
 
-    .painel_documentos{
+    .painel_documentos {
         height: 94%;
     }
 
-    .selecionar{
+    .selecionar {
         width: 100%;
         display: grid;
     }
 
-    .selectOpcPar{
+    .selectOpcPar {
         width: 100%;
         display: flex;
     }
 
-    .opc{
+    .opc {
         width: 50%;
     }
 
     /*---------------------------------------------*/
     /*Novidades-NewsLetter*/
 
-    .intro{
+    .intro {
         width: 100%;
     }
 
-    .novidade_chatbot{
+    .novidade_chatbot {
         width: 100%;
         margin-top: 20px;
         display: flex;
     }
 
-    .novidade, .chatBot{
+    .novidade,
+    .chatBot {
         width: 50%;
     }
 
-    .newsletter{
+    .newsletter {
         width: 100%;
         display: grid;
     }
 
-    .formContainer{
+    .formContainer {
         width: 100%;
     }
 
-    .formulario{
+    .formulario {
         width: 80%;
         margin: auto;
     }
@@ -116,34 +118,35 @@
     /*---------------------------------------------*/
     /*Footer*/
 
-    .footerNavegation{
+    .footerNavegation {
         width: 100%;
     }
 
-    footer{
+    footer {
         display: grid;
     }
 
     /*---------------------------------------------*/
     /*menu*/
 
-    .menuSuperior{
-        padding: 0;  
+    .menuSuperior {
+        padding: 0;
     }
-    .menuSopt{
+
+    .menuSopt {
         display: flex;
         position: absolute;
         right: 0px;
         width: 700px;
     }
 
-    .menuAconjunto{
-        display:flex;
+    .menuAconjunto {
+        display: flex;
         align-items: center;
-          
+
     }
 
-    .menuSopt p{
+    .menuSopt p {
         padding: 10px;
         color: #008542;
     }

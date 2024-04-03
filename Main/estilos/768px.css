@@ -1,10 +1,11 @@
 @media screen and (min-width: 768px) {
 
-    .display768Y{
-        display: contents  !important;;
+    .display768Y {
+        display: contents !important;
+        ;
     }
-    
-    .display768N{
+
+    .display768N {
         display: none !important;
     }
 
@@ -48,7 +49,7 @@
         display: flex;
     }
 
-    .oilmap hr{
+    .oilmap hr {
         height: 1px;
         margin: 5px !important;
     }
@@ -59,10 +60,10 @@
         height: 500px;
     }
 
-    .mapa{
+    .mapa {
         padding: 10px;
         overflow-x: hidden;
-        border-radius: 20px; 
+        border-radius: 20px;
         height: 425px;
     }
 
@@ -87,56 +88,56 @@
     .painel {
         display: grid;
         height: 75%;
-    }  
+    }
 
-    .overflow{
-        width: 90%; 
+    .overflow {
+        width: 90%;
         overflow: scroll;
         padding: 10px;
-        overflow-x: hidden;  
-    } 
+        overflow-x: hidden;
+    }
 
-    .painel_documentos{
+    .painel_documentos {
         background-color: #F8F8F8;
-        border-radius:20px;
+        border-radius: 20px;
         height: 90%;
     }
 
     /*---------------------------------------------*/
     /*Novidades-NewsLetter*/
 
-    .newsletter{
+    .newsletter {
         display: flex;
     }
 
-    .intro{
+    .intro {
         width: 60%;
         text-align: center;
         font-size: 1.3rem;
     }
 
-    .introConjunto img{
+    .introConjunto img {
         height: 120px;
     }
 
-    .introConjunto{
+    .introConjunto {
         text-align: left;
     }
 
-    .formulario{
+    .formulario {
         margin-top: 20%;
     }
-  
-    .formContainer{
+
+    .formContainer {
         width: 40%;
         text-align: center;
     }
 
-    .titulo_intro_Conjunto{
+    .titulo_intro_Conjunto {
         width: 100%;
     }
 
-    .titulo_intro_Conjunto h3{
+    .titulo_intro_Conjunto h3 {
         display: inline;
         color: #008542;
         font-size: 3rem;
@@ -145,30 +146,30 @@
     /*---------------------------------------------*/
     /*Chatbot*/
 
-    .chatBot h3{
-        color:#373737;
+    .chatBot h3 {
+        color: #373737;
     }
 
-    .chatBot span{
+    .chatBot span {
         display: none;
     }
 
     /*---------------------------------------------*/
     /*Footer*/
 
-    .footerIcon{
+    .footerIcon {
         display: none;
     }
 
-    footer{
+    footer {
         display: flex;
     }
 
-    .COPYRIGHT{
+    .COPYRIGHT {
         margin: auto 30px;
     }
-    
-    .footerNavegation{
+
+    .footerNavegation {
         width: 50%;
     }
 
