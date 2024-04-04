@@ -232,7 +232,7 @@ h3 {
 .formulario {
     width: 100;
     background-color: #F8F8F8;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 10px;
     display: flex;
 }
@@ -272,15 +272,15 @@ h3 {
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
     z-index: 3;
     width: 100vw;
     height: 100vh;
     background-color: #F8F8F8;
+    font-size: 1rem;
+    display: none;
 }
 
-.botContainer{
-    
-}
 .bot {
     padding: 5px;
     height: 100%;
@@ -293,13 +293,10 @@ h3 {
     overflow-x: hidden;
 }
 
-.botChat{
-    margin-top: auto;
-}
-
 .botControl {
     padding: 5px;
-    height: 10%;
+    height: 5%;
+    display: flex;
 }
 
 .botControl input[type='text'] {
@@ -311,11 +308,12 @@ h3 {
 }
 
 .botControl button {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: none;
-    border-radius: 30px;
+    border-radius: 35px;
     background-color: #D9D9D9;
+    align-items: center;
 }
 
 .textChatContainer{
@@ -330,8 +328,8 @@ h3 {
     margin: 5px;
 }
 
-.textoBot {
-    margin-right: auto;
+.bot i{
+    color: #797979;
 }
 
 .textoUsuario {
