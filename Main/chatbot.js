@@ -1,11 +1,17 @@
 //chatBot script
 const chatBotText = document.querySelector('#chatPergunta');
-const chatBotEnv = document.querySelector("#enviar");
+const chatBotEnv = document.querySelector('#enviar');
+const chatBotMess = document.querySelector('#botChat');
 
-console.log("ta pegando")
-
-chatBotEnv.addEventListener('click',()=>{
-    let mensagem = chatBotText.Value;
+chatBotEnv.addEventListener('click', () => {
+    let mensagem = 
+    `<div class='textChatContainer'>
+        <img src='imgs/petrologoRound.svg' alt=''>
+        <div class='textoConfig textoBot'>
+            <p>${chatBotText.value}</p >
+        </div >
+    </div >`;
+    document.chatBotMess.appendChild(mensagem);
 })
 
 function criaTexto(mensagem) {
@@ -13,9 +19,9 @@ function criaTexto(mensagem) {
 }
 
 
-//<div class="textChatContainer">
-/* <img src="imgs/petrologoRound.svg" alt="">
-<div class="textoConfig textoBot">
+//<div class='textChatContainer'>
+/* <img src='imgs/petrologoRound.svg' alt=''>
+<div class='textoConfig textoBot'>
     <p>mensagem</p>
 </div>
 </div> */
