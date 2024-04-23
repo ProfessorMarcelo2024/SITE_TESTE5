@@ -4,15 +4,15 @@ const chatBotEnv = document.querySelector('#enviar');
 const chatBotMess = document.querySelector('#botChat');
 
 chatBotEnv.addEventListener('click', () => {
-    let mensagem = 
-    `
+    let mensagem =
+        `
         <div class='textoConfig textoUsuario'>
             <p>${chatBotText.value}</p >
         </div >
         <img src="imgs/botIcon.svg" alt="">
    `;
-    const div=document.createElement('div')
-    div.setAttribute('class','textChatContainer');
+    const div = document.createElement('div')
+    div.setAttribute('class', 'textChatContainer');
     div.innerHTML = mensagem;
     chatBotMess.appendChild(div);
 })

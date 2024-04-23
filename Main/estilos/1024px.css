@@ -2,19 +2,18 @@
 
     .conteudo {
         display: grid;
+        padding: 40px;
     }
 
     .display1024Y {
         display: contents !important;
-        ;
+
     }
 
     .display1024N {
         display: none !important;
     }
 
-    /*---------------------------------------------*/
-    /*Faixa superior*/
     /*---------------------------------------------*/
     /*Area de apresentação*/
 
@@ -130,7 +129,7 @@
         text-align: justify;
     }
 
-    .botControl{
+    .botControl {
         height: 30px;
     }
 
