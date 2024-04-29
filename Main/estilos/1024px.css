@@ -122,11 +122,15 @@
         height: 500px;
         background-color: #F8F8F8;
         font-size: 1rem;
-        display: block;
+        display: block !important;
         border-radius: 15px;
         padding: 5px;
         margin: 20px auto;
         text-align: justify;
+    }
+
+    .titleCloseBot{
+       display: none;
     }
 
     .botControl {

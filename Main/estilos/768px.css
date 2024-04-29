@@ -1,8 +1,25 @@
 @media screen and (min-width: 768px) {
 
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #a1a1a1;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
+
     .display768Y {
         display: contents !important;
-        ;
     }
 
     .display768N {

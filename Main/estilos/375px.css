@@ -36,6 +36,10 @@ a {
     display: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 .display375Y {
     display: contents !important;
     ;
@@ -272,45 +276,55 @@ h3 {
     position: fixed;
     top: 0;
     right: 0;
-
     z-index: 3;
     width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
     background-color: #F8F8F8;
     font-size: 1rem;
-    display: block;
+    display: none;
+}
 
+.titleCloseBot{
+    height: 5%;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 10px;
+}
+
+#fecharBot{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+    margin-left: auto;
 }
 
 .bot {
     padding: 5px;
     height: 100%;
-  
 }
 
 .botChatcontainer {
-    height: 90%;
+    height: 85%;
     padding: 5px;
     overflow: scroll;
     overflow-x: hidden;
-
 }
 
 .botControl {
     padding: 5px;
     height: 5%;
     display: flex;
-
 }
 
 .botControl input[type='text'] {
-    width: 85%;
+    width: 90%;
     height: 25px;
     border: none;
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 5px;
-
 }
 
 .botControl button {
@@ -320,7 +334,8 @@ h3 {
     border-radius: 35px;
     background-color: #D9D9D9;
     align-items: center;
-    margin-left: 2px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .textChatContainer {
@@ -336,7 +351,7 @@ h3 {
     max-width: 100%;
 }
 
-.bot i {
+.bot i , .formModal i{
     width: 10px;
     position: relative;
     top: 10%;
