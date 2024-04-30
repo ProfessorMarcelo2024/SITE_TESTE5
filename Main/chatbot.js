@@ -54,7 +54,7 @@ function processa() {
     mensagem(pergunta,"usuario");
     mensagem(resposta,"bot");
 
-    paraScroll.scrollBy(0, 100);
+    paraScroll.scrollTop = paraScroll.scrollHeight;
     chatBotText.value = "";
 }
 
