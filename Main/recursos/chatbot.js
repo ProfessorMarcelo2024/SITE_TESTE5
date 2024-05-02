@@ -55,6 +55,7 @@ function processa() {
     mensagem(resposta,"bot");
 
     paraScroll.scrollTop = paraScroll.scrollHeight;
+    chatBotText.setAttribute('placeholder','');
     chatBotText.value = "";
 }
 

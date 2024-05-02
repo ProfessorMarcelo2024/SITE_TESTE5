@@ -55,15 +55,23 @@
             <div class="controles">
                 <div class="selecionar">
                     <div class="selectOpcPar">
-                        <div class="opc"><input type="radio" name="modos" id="pocos" checked><label
-                                for="pocos">Poços</label></div>
-                        <div class="opc"><input type="radio" name="modos" id="blocos"><label for="blocos">Blocos</label>
+                        <div class="opc">
+                            <input type="radio" name="modos" id="pocos" checked>
+                            <label for="pocos">Poços</label>
+                        </div>
+                        <div class="opc">
+                            <input type="radio" name="modos" id="blocos">
+                            <label for="blocos">Blocos</label>
                         </div>
                     </div>
                     <div class="selectOpcPar">
-                        <div class="opc"><input type="radio" name="modos" id="campos"><label for="campos">Campos</label>
+                        <div class="opc">
+                            <input type="radio" name="modos" id="campos">
+                            <label for="campos">Campos</label>
                         </div>
-                        <div class="opc"><input type="radio" name="modos" id="bacias"><label for="bacias">Bacias</label>
+                        <div class="opc">
+                            <input type="radio" name="modos" id="bacias">
+                            <label for="bacias">Bacias</label>
                         </div>
                     </div>
 
@@ -71,7 +79,7 @@
                 <div class="painel_documentos">
                     <div class="painel">
                         <div class="opcoes overflow">
-                            <p>
+                            <!--<p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue dictum sem in
                                 mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                                 curae; Praesent at nulla ut nibh mattis lacinia. Phasellus at nunc id justo vestibulum
@@ -82,13 +90,13 @@
                                 Cras vel nibh ac dolor ultrices iaculis eu quis lorem. Morbi sollicitudin augue et massa
                                 tristique rhoncus eu vitae odio. Ut pretium ullamcorper dui, vel porttitor neque mattis
                                 eu. Donec cursus ultricies aliquet.
-                            </p>
+                            </p>-->
                         </div>
                         <div class="separador">
                         </div>
                         <hr>
                         <div class="resultado overflow">
-                            <p>
+                            <!--<p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue dictum sem in
                                 mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                                 curae; Praesent at nulla ut nibh mattis lacinia. Phasellus at nunc id justo vestibulum
@@ -99,7 +107,7 @@
                                 Cras vel nibh ac dolor ultrices iaculis eu quis lorem. Morbi sollicitudin augue et massa
                                 tristique rhoncus eu vitae odio. Ut pretium ullamcorper dui, vel porttitor neque mattis
                                 eu. Donec cursus ultricies aliquet.
-                            </p>
+                            </p>-->
                         </div>
                         <hr>
                     </div>
@@ -134,7 +142,7 @@
                     <div class="formContainer">
                         <div class="formulario">
                             <div class="formEmail">
-                                 Email: <input type="email" placeholder="...@email.com">
+                                Email: <input type="email" placeholder="...@email.com">
                             </div>
                             <div class="botao">
                                 <button type="submit">Inscrever</button>
@@ -153,7 +161,8 @@
                         <h3>Alguma pergunta?</h3>
                         <div class="introConjunto chatConjunto">
                             <img src="imgs/botIcon.svg" alt="">
-                            <p><span>Alguma pergunta?: Clique aqui<br></span> No nosso chat você acha respostas para perguntas
+                            <p><span>Alguma pergunta?: Clique aqui<br></span> No nosso chat você acha respostas para
+                                perguntas
                                 frequentes.
                             </p>
                         </div>
@@ -184,7 +193,7 @@
                                     </div>
                                 </div>
                                 <div class="botControl">
-                                    <input type="text" id="chatPergunta">
+                                    <input type="text" id="chatPergunta" placeholder="Diga ola para começar a conversa">
                                     <button id="enviar"><i class="material-icons">send</i></button>
                                 </div>
                             </div>
@@ -241,7 +250,8 @@
             <a href="">Busca</a>
         </div>
     </div>
-    <script src="chatbot.js"></script>
+    <script src="controlConfig.js"></script>
+    <script src="recursos/chatbot.js"></script>
     <script src="estilos/ScriptEstilo.js"></script>
 </body>
 

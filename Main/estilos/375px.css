@@ -1,6 +1,24 @@
 /*Geral*/
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a1a1a1;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -170,8 +188,13 @@ h3 {
 /*Painel: opções*/
 
 .opcoes {
-    display: flex;
+    
     text-align: justify;
+}
+
+.opcoes p{
+    margin: 5px;
+    width: auto;
 }
 
 /*Painel: resultado*/
