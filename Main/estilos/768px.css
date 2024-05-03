@@ -43,6 +43,10 @@
         margin: 20px 0px;
     }
 
+    .opcoesDivision p{
+        width: 25%;
+    }
+
     /*---------------------------------------------*/
     /*Oil map: pesquisa_mapa*/
 

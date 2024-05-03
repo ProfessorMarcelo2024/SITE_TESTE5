@@ -54,7 +54,7 @@ a {
     display: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -173,8 +173,8 @@ h3 {
 
 .overflow {
     width: 50%;
-    overflow: scroll;
     padding: 10px;
+    overflow: auto;
     overflow-x: hidden;
 }
 
@@ -187,14 +187,14 @@ h3 {
 
 /*Painel: opções*/
 
-.opcoes {
-    
-    text-align: justify;
+.opcoesDivision {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.opcoes p{
-    margin: 5px;
-    width: auto;
+.opcoesDivision p{
+    width: 33%;
 }
 
 /*Painel: resultado*/
@@ -307,14 +307,14 @@ h3 {
     display: none;
 }
 
-.titleCloseBot{
+.titleCloseBot {
     height: 5%;
     font-size: 1.5rem;
     display: flex;
     padding: 10px;
 }
 
-#fecharBot{
+#fecharBot {
     width: 35px;
     height: 35px;
     border: none;
@@ -374,7 +374,8 @@ h3 {
     max-width: 100%;
 }
 
-.bot i , .formModal i{
+.bot i,
+.formModal i {
     width: 10px;
     position: relative;
     top: 10%;

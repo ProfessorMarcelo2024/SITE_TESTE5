@@ -5,7 +5,9 @@ const blocos = ['blocos1','blocos2','blocos3','blocos4','blocos5','blocos6','blo
 const campos = ['campos1','campos2','campos3','campos4','campos5','campos6','campos7','campos8','campos9'];
 const bacias = ['bacias1','bacias2','bacias3','bacias4','bacias5','bacias6','bacias7','bacias8','bacias9'];
 
-const quadroOpc = document.querySelector('.opcoes');
+const quadroOpc = document.querySelector('.opcoesDivision');
+
+povoando(pocos)
 
 modos.forEach(modo => {
     modo.addEventListener('change', () => {
@@ -31,6 +33,7 @@ modos.forEach(modo => {
 
 
 function povoando(povo) {
+    quadroOpc.innerHTML = "";
     povo.map((el)=>{
         let elemento = document.createElement('p');
         elemento.setAttribute('id',el);
