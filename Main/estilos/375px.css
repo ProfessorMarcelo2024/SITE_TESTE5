@@ -1,24 +1,6 @@
 /*Geral*/
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #a1a1a1;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #888;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +42,6 @@ button {
 
 .display375Y {
     display: contents !important;
-    ;
 }
 
 .display375N {
@@ -168,7 +149,6 @@ h3 {
     display: flex;
     padding: 5px;
     height: 130px;
-
 }
 
 .overflow {
@@ -194,7 +174,8 @@ h3 {
 }
 
 .opcoesDivision p{
-    width: 33%;
+    padding: 5px;
+    cursor: pointer;
 }
 
 /*Painel: resultado*/

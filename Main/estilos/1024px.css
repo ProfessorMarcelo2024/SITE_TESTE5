@@ -1,5 +1,23 @@
 @media screen and (min-width: 1024px) {
 
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 20px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #a1a1a1;
+        border-radius: 20px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
+    
     .conteudo {
         display: grid;
         padding: 40px;
@@ -78,6 +96,10 @@
 
     .opc {
         width: 50%;
+    }
+
+    .opcoesDivision p{
+        width: 20%;
     }
 
     /*---------------------------------------------*/
