@@ -178,6 +178,11 @@ h3 {
     cursor: pointer;
 }
 
+.opcoesDivision p:hover{
+    background-color: #e0dfdf;
+    border-radius: 10px;
+}
+
 /*Painel: resultado*/
 
 .resultado {

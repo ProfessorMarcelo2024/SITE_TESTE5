@@ -7,7 +7,21 @@ const pocos = ['poço1', 'poço2', 'poço3', 'poço4', 'poço5', 'poço6', 'poç
 const blocos = ['blocos1', 'blocos2', 'blocos3', 'blocos4', 'blocos5', 'blocos6', 'blocos7', 'blocos8', 'blocos9'];
 const campos = ['campos1', 'campos2', 'campos3', 'campos4', 'campos5', 'campos6', 'campos7', 'campos8', 'campos9'];
 const bacias = ['bacias1', 'bacias2', 'bacias3', 'bacias4', 'bacias5', 'bacias6', 'bacias7', 'bacias8', 'bacias9'];
-
+/* 
+(id,
+nomeDopoço,
+cadastro,
+operador,
+estado, 
+bacia, 
+bloco, 
+campo, 
+situacao,  
+latitude, 
+longitude, 
+creado, 
+atualizado)
+                               */
 const quadroOpc = document.querySelector('.opcoesDivision');
 
 povoando(pocos);
@@ -47,8 +61,8 @@ function povoando(povo) {
 
     selecionavel = [...document.querySelectorAll('.opcResultado')];
 
-    selecionavel.forEach(selecionavel =>{
-        selecionavel.addEventListener('click', ()=>{
+    selecionavel.forEach(selecionavel => {
+        selecionavel.addEventListener('click', () => {
             console.log(selecionavel.id);
         })
     })
