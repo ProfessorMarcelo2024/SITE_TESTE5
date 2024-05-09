@@ -2,4 +2,18 @@ databse: lista_pocos;
 user: usuarioBase;
 pass: BRgxKaawWtQa0VuAgHCC82iaA7amWC;
 
-(id ,   nomeDopoço  ,   cadastro    ,   operador    ,   estado  ,   bacia   ,   bloco   ,   campo   ,   situacao    ,   latitude    ,   longitude   ,   creado  ,   atualizado)
+(
+id
+nomeDopoço
+cadastro
+operador
+estado
+bacia
+bloco
+campo 
+situacao
+latitude
+longitude 
+creado
+atualizado
+)

@@ -177,6 +177,8 @@ h3 {
 .opcoesDivision p{
     padding: 5px;
     cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .opcoesDivision p:hover{

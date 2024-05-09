@@ -3,8 +3,9 @@ O que falta fazer:
  - Fazer formulario do newsletter; deixa quieto
  - Adicionar botão para abrir o chat bot na versão mobile; Feito
  - Configurar algum exemplo para o chat bot funcionar; Feito
- - Conectar com um banco de dados;
+ - Conectar com um banco de dados; feito
  - Programar a interatividade do mapa;
  - Display das informações dos poços;
  - refatorar o codigo para ingles; deixa quieto
+ - ver clamp() para P dos controls
  

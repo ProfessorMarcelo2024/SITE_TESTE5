@@ -8,10 +8,16 @@ const app = express();
 // Configuração da conexão MySQL
 const connect = mysql.createConnection(sqlconfig);
 
-
-
-
-
+app.get('/dados', (req, res) => {
+    connect.query('SELECT * FROM pocos', (err, results) => {
+        if (err) {
+            console.error('Erro ao buscar dados:', err);
+            res.status(500).send('Erro ao buscar dados do banco de dados.');
+        } else {
+            res.json(results);
+        }
+    });
+});
 
 // Configurar o Express para servir arquivos estáticos
 app.use(express.static('public'));
