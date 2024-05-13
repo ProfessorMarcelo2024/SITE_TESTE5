@@ -1,5 +1,6 @@
 // traz os dados do banco
 var dados = [];
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/dados')
         .then(response => response.json())
@@ -7,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dados = data;
         })
         .catch(error => console.log('Erro ao buscar dados:'));
-        povoando(dados)
-        console.log(dados);
 });
 
 //pegando os radios
@@ -24,7 +23,7 @@ const campos = ['campos1', 'campos2', 'campos3', 'campos4', 'campos5', 'campos6'
 const bacias = ['bacias1', 'bacias2', 'bacias3', 'bacias4', 'bacias5', 'bacias6', 'bacias7', 'bacias8', 'bacias9'];
 
 //
-const infoPoco = ["Nome do Poço:","Cadastro:","Operador:","Estado:","Bacia:","Bloco:","Campo:","Situação","Latitude","Longitude"];
+const infoPoco = [" - Nome do Poço:"," - Cadastro:"," - Operador:"," - Estado:"," - Bacia:"," - Bloco:"," - Campo:"," - Situação:"," - Latitude:"," - Longitude:"];
 
 modos.forEach(modo => {
     modo.addEventListener('change', () => {
@@ -49,14 +48,19 @@ modos.forEach(modo => {
 })
 
 function resultado(dado) {
+    let inf = [];
+
+    dados.map((el)=>{
+        if (el.id == dado) {
+            inf = Object.values(el);
+        }
+    })
+
     quadroRes.innerHTML = "";
-    let i = 0;
+    let i = 1;
     infoPoco.map((el)=>{
-        //let infoEspecifica = [...dados[i]]
         let elemento = document.createElement('p');
-        elemento.innerHTML = `${el} ${dado[i]}`;
-       // console.log(infoEspecifica[i]);
-       console.log(dado[i]);
+        elemento.innerHTML = `${el} ${inf[i]}`;
         quadroRes.appendChild(elemento);
         i++;
     })
@@ -78,7 +82,7 @@ function povoando(povo) {
 
     selecionavel.forEach(selecionavel => {
         selecionavel.addEventListener('click', () => {
-            resultado(selecionavel);
+            resultado(selecionavel.id);
         })
     })
 }
