@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             dados = data;
+            povoando(dados);
         })
         .catch(error => console.log('Erro ao buscar dados:'));
 });
@@ -16,6 +17,8 @@ const modos = [...document.querySelectorAll('input[type="radio"][name="modos"]')
 //pegando as areas
 const quadroOpc = document.querySelector('.opcoesDivision');
 const quadroRes = document.querySelector('.resultadoDivision');
+const downData = document.querySelector('#dataInfo');
+const downNome = document.querySelector('#nameInfo');
 
 //emulando dados
 const blocos = ['blocos1', 'blocos2', 'blocos3', 'blocos4', 'blocos5', 'blocos6', 'blocos7', 'blocos8', 'blocos9'];
@@ -23,7 +26,7 @@ const campos = ['campos1', 'campos2', 'campos3', 'campos4', 'campos5', 'campos6'
 const bacias = ['bacias1', 'bacias2', 'bacias3', 'bacias4', 'bacias5', 'bacias6', 'bacias7', 'bacias8', 'bacias9'];
 
 //
-const infoPoco = [" - Nome do Poço:"," - Cadastro:"," - Operador:"," - Estado:"," - Bacia:"," - Bloco:"," - Campo:"," - Situação:"," - Latitude:"," - Longitude:"];
+const infoPoco = [" - Nome do Poço:", " - Cadastro:", " - Operador:", " - Estado:", " - Bacia:", " - Bloco:", " - Campo:", " - Situação:", " - Latitude:", " - Longitude:"];
 
 modos.forEach(modo => {
     modo.addEventListener('change', () => {
@@ -49,23 +52,22 @@ modos.forEach(modo => {
 
 function resultado(dado) {
     let inf = [];
-
-    dados.map((el)=>{
+    dados.map((el) => {
         if (el.id == dado) {
             inf = Object.values(el);
+            downData.innerHTML =formatarData(el.updated_at);
+            downNome.innerHTML =el.nomeDopoco;
         }
     })
-
     quadroRes.innerHTML = "";
     let i = 1;
-    infoPoco.map((el)=>{
+    infoPoco.map((el) => {
         let elemento = document.createElement('p');
         elemento.innerHTML = `${el} ${inf[i]}`;
         quadroRes.appendChild(elemento);
         i++;
     })
 }
-
 
 function povoando(povo) {
     quadroOpc.innerHTML = "";
@@ -77,8 +79,7 @@ function povoando(povo) {
         quadroOpc.appendChild(elemento);
     })
 
-    let selecionavel = "";
-    selecionavel = [...document.querySelectorAll('.opcResultado')];
+    let selecionavel = [...document.querySelectorAll('.opcResultado')];
 
     selecionavel.forEach(selecionavel => {
         selecionavel.addEventListener('click', () => {
@@ -87,7 +88,19 @@ function povoando(povo) {
     })
 }
 
-
+function formatarData(dataString) {
+    let data = new Date(dataString); 
+    let dia = data.getDate();
+    let mes = data.getMonth() + 1;
+    let ano = data.getFullYear();
+    if (dia < 10) {
+        dia = '0' + dia;
+    }
+    if (mes < 10) {
+        mes = '0' + mes;
+    }
+    return dia + '/' + mes + '/' + ano;
+}
 
 
 
@@ -103,8 +116,7 @@ function povoandoSimples(povo) {
         quadroOpc.appendChild(elemento);
     })
 
-    let selecionavel = "";
-    selecionavel = [...document.querySelectorAll('.opcResultado')];
+    let selecionavel = [...document.querySelectorAll('.opcResultado')];
 
     selecionavel.forEach(selecionavel => {
         selecionavel.addEventListener('click', () => {
