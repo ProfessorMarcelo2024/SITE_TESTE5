@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             dados = data;
             povoando(dados);
+            resultado(dados[0].id);
         })
         .catch(error => console.log('Erro ao buscar dados:'));
 });
