@@ -53,11 +53,13 @@ modos.forEach(modo => {
 
 function resultado(dado) {
     let inf = [];
+
     dados.map((el) => {
         if (el.id == dado) {
             inf = Object.values(el);
             downData.innerHTML =formatarData(el.updated_at);
             downNome.innerHTML =el.nomeDopoco;
+            waypointAdd(el.latitude, el.longitude);
         }
     })
     quadroRes.innerHTML = "";
@@ -84,6 +86,7 @@ function povoando(povo) {
 
     selecionavel.forEach(selecionavel => {
         selecionavel.addEventListener('click', () => {
+            waypointRemove()
             resultado(selecionavel.id);
         })
     })
@@ -102,10 +105,6 @@ function formatarData(dataString) {
     }
     return dia + '/' + mes + '/' + ano;
 }
-
-
-
-
 
 function povoandoSimples(povo) {
     quadroOpc.innerHTML = "";
