@@ -20,6 +20,8 @@ const quadroOpc = document.querySelector('.opcoesDivision');
 const quadroRes = document.querySelector('.resultadoDivision');
 const downData = document.querySelector('#dataInfo');
 const downNome = document.querySelector('#nameInfo');
+const AdownLoad = document.querySelector('#infoDownload');
+const pesquisa = document.querySelector('#pesquisa');
 
 //emulando dados
 const blocos = ['blocos1', 'blocos2', 'blocos3', 'blocos4', 'blocos5', 'blocos6', 'blocos7', 'blocos8', 'blocos9'];
@@ -52,6 +54,7 @@ modos.forEach(modo => {
 })
 
 function resultado(dado) {
+    
     let inf = [];
 
     dados.map((el) => {
@@ -59,6 +62,7 @@ function resultado(dado) {
             inf = Object.values(el);
             downData.innerHTML =formatarData(el.updated_at);
             downNome.innerHTML =el.nomeDopoco;
+            AdownLoad.setAttribute('href', `./recursos/pdfs/${el.id}.pdf`);
             waypointAdd(el.latitude, el.longitude);
         }
     })
@@ -86,7 +90,7 @@ function povoando(povo) {
 
     selecionavel.forEach(selecionavel => {
         selecionavel.addEventListener('click', () => {
-            waypointRemove()
+            waypointRemove();
             resultado(selecionavel.id);
         })
     })
@@ -105,6 +109,28 @@ function formatarData(dataString) {
     }
     return dia + '/' + mes + '/' + ano;
 }
+
+pesquisa.addEventListener('change',()=>{
+    
+    dado = pesquisa.value;
+    dados.map((el)=>{
+        if (el.nomeDopoco == dado) {
+            waypointRemove();
+            resultado(el.id);
+        }
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
 
 function povoandoSimples(povo) {
     quadroOpc.innerHTML = "";

@@ -63,7 +63,8 @@
         text-align: center
     }
 
-    .mapa img {
+    .mapa svg
+     {
         width: auto;
         height: 100%;
     }

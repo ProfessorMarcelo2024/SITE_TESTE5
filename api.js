@@ -2,6 +2,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const sqlconfig = require('./recursosAPI/sqlconfig');
+const pdfCreator = require('./recursosAPI/pdfCreator');
 
 const app = express();
 
@@ -14,7 +15,9 @@ app.get('/dados', (req, res) => {
             console.error('Erro ao buscar dados:', err);
             res.status(500).send('Erro ao buscar dados do banco de dados.');
         } else {
+            pdfCreator.criaDocs(results);
             res.json(results);
+
         }
     });
 });
