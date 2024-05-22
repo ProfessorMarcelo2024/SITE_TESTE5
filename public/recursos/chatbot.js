@@ -1,9 +1,11 @@
 //chatBot script
+//Elementos da pagina
 const chatBotText = document.querySelector('#chatPergunta');
 const chatBotEnv = document.querySelector('#enviar');
 const chatBotMess = document.querySelector('#botChat');
 const paraScroll = document.querySelector('.botChatcontainer');
 
+//Respostas pré configuradas do bot
 const respostas = {
     'poços': 'aqui vem alguma explicação de o que são poços',
     'bacias': 'aqui vem alguma explicação de o que são bacias',
@@ -13,6 +15,7 @@ const respostas = {
     'quem é você?': 'Sou o chatBot oilmap'
 };
 
+//Exibe a resposta na tela, usuario ou Bot
 function mensagem(mensagem, usuario) {
     let texto = '';
     if (usuario == 'usuario') {
@@ -39,6 +42,7 @@ function mensagem(mensagem, usuario) {
     chatBotMess.appendChild(div);
 }
 
+//Analisa a pergunta feita e verifica a existencia de uma resposta
 function processaResposta(pergunta) {
     if (pergunta in respostas) {
         return respostas[pergunta];
@@ -47,6 +51,7 @@ function processaResposta(pergunta) {
     }
 }
 
+//Inicia o processo recebendo a mensagem
 function processa() {
     let pergunta = chatBotText.value;
     let resposta = processaResposta(pergunta.toLowerCase());
@@ -59,10 +64,12 @@ function processa() {
     chatBotText.value = "";
 }
 
+//Add envio no click
 chatBotEnv.addEventListener('click', () => {
     processa();
 })
 
+//Add envio no enter
 chatBotText.addEventListener('keypress', (e)=>{
     if (e.key === 'Enter') {
         processa();

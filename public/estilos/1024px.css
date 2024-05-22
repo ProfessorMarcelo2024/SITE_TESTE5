@@ -3,21 +3,21 @@
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     ::-webkit-scrollbar-track {
         background: #f1f1f1;
         border-radius: 20px;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background: #a1a1a1;
         border-radius: 20px;
     }
-    
+
     ::-webkit-scrollbar-thumb:hover {
         background: #888;
     }
-    
+
     .conteudo {
         display: grid;
         padding: 40px;
@@ -60,11 +60,11 @@
 
     .mapa {
         height: 95%;
+        overflow: hidden;
         text-align: center
     }
 
-    .mapa svg
-     {
+    .mapa svg {
         width: auto;
         height: 100%;
     }
@@ -100,7 +100,7 @@
         width: 50%;
     }
 
-    .opcoesDivision p{
+    .opcoesDivision p {
         margin: 10px;
     }
 
@@ -153,8 +153,8 @@
         text-align: justify;
     }
 
-    .titleCloseBot{
-       display: none;
+    .titleCloseBot {
+        display: none;
     }
 
     .botControl {

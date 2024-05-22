@@ -1,18 +1,18 @@
-//window track adjust to mobile
+//Ajuste do tamanho de tela Mobile
 window.addEventListener('resize',()=>{
     let altura = window.innerHeight*0.01;
     document.documentElement.style.setProperty('--vh',`${altura}px`);
 })
 
-//Open and close bot
+//Abre e fecha Bot
 const chatIntro = document.querySelector('.chatConjunto');
 const modalbot = document.querySelector('.formModal');
 const btnCloseBot = document.querySelector('#fecharBot');
-//Open 
+//Abre 
 chatIntro.addEventListener('click',()=>{
     modalbot.style.display = 'block';
 })
-//close
+//Fecha
 btnCloseBot.addEventListener('click',()=>{
     modalbot.style.display = 'none'
 })

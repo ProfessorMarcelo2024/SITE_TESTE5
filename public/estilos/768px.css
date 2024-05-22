@@ -1,7 +1,5 @@
 @media screen and (min-width: 768px) {
 
-    
-
     .display768Y {
         display: contents !important;
     }
@@ -43,7 +41,7 @@
         margin: 20px 0px;
     }
 
-    .opcoesDivision p{
+    .opcoesDivision p {
         width: 25%;
     }
 
@@ -159,7 +157,7 @@
         display: none;
     }
 
-    .bot{
+    .bot {
         padding: 10px;
     }
 

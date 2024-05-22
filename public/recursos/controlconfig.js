@@ -1,4 +1,4 @@
-// traz os dados do banco
+// traz os dados do banco e armazena as informações em dados
 var dados = [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //pegando os radios
 const modos = [...document.querySelectorAll('input[type="radio"][name="modos"]')];
 
-//pegando as areas
+//pegando os elementos da pagina
 const quadroOpc = document.querySelector('.opcoesDivision');
 const quadroRes = document.querySelector('.resultadoDivision');
 const downData = document.querySelector('#dataInfo');
@@ -23,14 +23,15 @@ const downNome = document.querySelector('#nameInfo');
 const AdownLoad = document.querySelector('#infoDownload');
 const pesquisa = document.querySelector('#pesquisa');
 
-//emulando dados
+//emulando dados placeholder
 const blocos = ['blocos1', 'blocos2', 'blocos3', 'blocos4', 'blocos5', 'blocos6', 'blocos7', 'blocos8', 'blocos9'];
 const campos = ['campos1', 'campos2', 'campos3', 'campos4', 'campos5', 'campos6', 'campos7', 'campos8', 'campos9'];
 const bacias = ['bacias1', 'bacias2', 'bacias3', 'bacias4', 'bacias5', 'bacias6', 'bacias7', 'bacias8', 'bacias9'];
 
-//
+//Tipos de informações tratadas no elemento poço
 const infoPoco = [" - Nome do Poço:", " - Cadastro:", " - Operador:", " - Estado:", " - Bacia:", " - Bloco:", " - Campo:", " - Situação:", " - Latitude:", " - Longitude:"];
 
+//Acionamento ao alterar o radio selecionado
 modos.forEach(modo => {
     modo.addEventListener('change', () => {
         switch (modo.id) {
@@ -53,6 +54,7 @@ modos.forEach(modo => {
     })
 })
 
+//Mostra os resultados da pesquisa pelos dados e disponibiliza o Download dos arquivos
 function resultado(dado) {
     
     let inf = [];
@@ -76,6 +78,7 @@ function resultado(dado) {
     })
 }
 
+//Povoa com opções baseado no elemento selecionado
 function povoando(povo) {
     quadroOpc.innerHTML = "";
     povo.map((el) => {
@@ -96,6 +99,7 @@ function povoando(povo) {
     })
 }
 
+//Traduz o formato da data americana para a Brasileira
 function formatarData(dataString) {
     let data = new Date(dataString); 
     let dia = data.getDate();
@@ -110,8 +114,9 @@ function formatarData(dataString) {
     return dia + '/' + mes + '/' + ano;
 }
 
+
+//Possibilita a pesquisa na barra de pesquisa superior ao mapa
 pesquisa.addEventListener('change',()=>{
-    
     dado = pesquisa.value;
     dados.map((el)=>{
         if (el.nomeDopoco == dado) {
@@ -121,17 +126,7 @@ pesquisa.addEventListener('change',()=>{
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
+//Povoa placeholders
 function povoandoSimples(povo) {
     quadroOpc.innerHTML = "";
     povo.map((el) => {

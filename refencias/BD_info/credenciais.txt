@@ -2,7 +2,7 @@ databse: lista_pocos;
 user: usuarioBase;
 pass: BRgxKaawWtQa0VuAgHCC82iaA7amWC;
 
-(
+
 id
 nomeDopoço
 cadastro
@@ -16,4 +16,3 @@ latitude
 longitude 
 creado
 atualizado
-)

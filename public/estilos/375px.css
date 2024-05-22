@@ -48,18 +48,6 @@ button {
     display: none !important;
 }
 
-.enviar{
-    border: none;
-    border-radius: 10px;
-    background-color: #008542;
-    height: 90%;
-    padding: 5px;
-    color: #F8F8F8;
-}
-
-.downloadInformacoes{
-    display: flex;
-}
 
 /*---------------------------------------------*/
 /*Faixa superior*/
@@ -224,6 +212,10 @@ h3 {
     width: 55px;
 }
 
+.downloadInformacoes{
+    display: flex;
+}
+
 /*---------------------------------------------*/
 /*Novidades-NewsLetter Intro*/
 
@@ -253,6 +245,15 @@ h3 {
 .introConjunto img {
     height: 100px;
     padding: 3px;
+}
+
+.enviar{
+    border: none;
+    border-radius: 10px;
+    background-color: #008542;
+    height: 90%;
+    padding: 5px;
+    color: #F8F8F8;
 }
 
 /*---------------------------------------------*/
