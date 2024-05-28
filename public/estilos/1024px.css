@@ -20,7 +20,7 @@
 
     .conteudo {
         display: grid;
-        padding: 40px;
+        padding: 5px;
     }
 
     .display1024Y {
@@ -74,7 +74,7 @@
 
     .controles {
         width: 25%;
-        height: 100%;
+        height: 95%;
         margin-left: 10px;
         background-color: #F8F8F8;
         border-radius: 20px;
